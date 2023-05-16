@@ -1,0 +1,144 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --mainColor: #607d8b;
+  --secColor: #009688;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background: linear-gradient(45deg, #ff5722, #3f51b5);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+.container .app {
+  width: 450px;
+  height: 290px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: var(--mainColor);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+/* JavaScript change-height Class */
+.container .app.change-height {
+  height: 660px;
+}
+
+.container .app .generator {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.container .app .generator h1 {
+  margin-bottom: 15px;
+  color: var(--secColor);
+}
+.container .app .generator p {
+  margin-bottom: 15px;
+  color: dimgray;
+}
+.container .app .generator input {
+  height: 50px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border: 2px solid var(--secColor);
+  border-radius: 8px;
+  opacity: 0.5;
+  transition: 0.5s;
+  caret-color: var(--secColor);
+}
+.container .app .generator input:focus {
+  opacity: 1;
+}
+.container .app .btn {
+  height: 50px;
+  margin-top: 10px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background:dimgray;
+  transition: 0.5s;
+}
+.container .app .btn:hover {
+  background: var(--secColor);
+}
+
+.container .app .detials {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.container .app .detials img{
+  align-self: center;
+  width: 250px;
+}
+
+
+
