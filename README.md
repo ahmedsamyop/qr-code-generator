@@ -1,2 +1,2 @@
 # qr-code-generator
-Generator qr code with javascript
+Generator qr code App javascript
